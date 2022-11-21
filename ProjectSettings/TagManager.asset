@@ -4,11 +4,23 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Animal
-  - Water
-  - Fly
-  - Climb
   - Stair
+  - Climb
+  - Fly
+  - ground
+  - AWThing
+  - Scenery
+  - AWEnvironment
+  - AWSun
+  - AWAttribution
+  - CanvasOne
+  - CanvasTwo
+  - AWWait
+  - AWStitcherDisable
+  - AWForeGround
+  - AWMiddleGround
+  - AWBackGround
+  - AWSetup
   layers:
   - Default
   - TransparentFX
@@ -18,9 +30,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - PostProcessing
+  - Ground
+  - Animation
   - 
   - 
   - 
