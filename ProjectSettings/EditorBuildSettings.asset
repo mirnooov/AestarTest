@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/AnythingWorld/Samples/Examples/MakeExamples/MakeObjectExample.unity
     guid: 16ab358b353ee4b458c3d551e6b4b73a
+  - enabled: 1
+    path: Assets/AnythingWorld/Samples/Test Scenes/TestArea.unity
+    guid: 954a538b95e164f25b4ea82556dbaf95
   m_configObjects: {}

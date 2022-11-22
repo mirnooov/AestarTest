@@ -250,6 +250,13 @@ namespace AnythingWorld
             if (DDEBUG) Debug.Log("VOICELOG: Update loop exit");
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                StartVoiceInput();
+            }
+        }
 
 
         #region WinTTS Funcs
@@ -274,7 +281,8 @@ namespace AnythingWorld
             }
             else
             {
-                if (DDEBUG) Debug.Log("WindowsSTTSetup: Recognizer not null, not setting up");
+                if (DDEBUG) 
+                    Debug.Log("WindowsSTTSetup: Recognizer not null, not setting up");
             }
 
         }
@@ -363,7 +371,8 @@ namespace AnythingWorld
             {
                 if (m_DictationRecognizer != null)
                 {
-                    if (DDEBUG) Debug.Log("m_DictionRecognizer not null on VoiceSetup, destroying");
+                    if (DDEBUG) 
+                        Debug.Log("m_DictionRecognizer not null on VoiceSetup, destroying");
                     WindowsSTTDestroy();
                 }
                 WindowsSTTSetup();
@@ -423,7 +432,8 @@ namespace AnythingWorld
         /// </summary>
         public void StartVoiceInput()
         {
-            if (AnythingSettings.Instance.showDebugMessages) Debug.Log("Starting voice input");
+            if (AnythingSettings.Instance.showDebugMessages) 
+                Debug.Log("Starting voice input");
 
             ResetProcessedStringVariables();
 
